@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,10 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a202c; /* Dark background */
-            color: #e2e8f0; /* Light text */
+            background-color: #1a202c;
+            /* Dark background */
+            color: #e2e8f0;
+            /* Light text */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,7 +27,8 @@
             width: 100%;
             aspect-ratio: 16 / 9;
             max-width: 900px;
-            background-color: #2d3748; /* Slightly lighter dark background for the slide */
+            background-color: #2d3748;
+            /* Slightly lighter dark background for the slide */
             border-radius: 1.5rem;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             display: flex;
@@ -33,7 +37,7 @@
             overflow: hidden;
             padding: 2rem;
         }
-        
+
         .slide {
             display: none;
             flex-grow: 1;
@@ -44,18 +48,20 @@
             transition: opacity 0.5s ease-in-out;
             padding: 1rem;
         }
-        
+
         .slide.active {
             display: flex;
         }
 
-        .slide h2, .slide h3 {
+        .slide h2,
+        .slide h3 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
-            color: #48bb78; /* Green for headings */
+            color: #48bb78;
+            /* Green for headings */
         }
-        
+
         .slide h3 {
             font-size: 1.75rem;
             margin-bottom: 1rem;
@@ -77,7 +83,8 @@
 
         .slide ul li::before {
             content: "•";
-            color: #a0aec0; /* Light gray bullet points */
+            color: #a0aec0;
+            /* Light gray bullet points */
             font-weight: bold;
             display: inline-block;
             width: 1rem;
@@ -86,7 +93,7 @@
             left: 0;
             top: 0;
         }
-        
+
         /* This ensures the navigation buttons are always visible at the bottom */
         .navigation-buttons {
             display: flex;
@@ -135,7 +142,7 @@
             height: auto;
             border-radius: 0.5rem;
         }
-        
+
         .flowchart-container {
             display: flex;
             flex-direction: row;
@@ -143,7 +150,8 @@
             justify-content: center;
             gap: 1rem;
             margin-top: 2rem;
-            flex-wrap: wrap; /* Added for responsiveness */
+            flex-wrap: wrap;
+            /* Added for responsiveness */
         }
 
         .flowchart-item {
@@ -153,14 +161,17 @@
             gap: 0.5rem;
             text-align: center;
         }
+
         .flowchart-item .box {
             background-color: #4a5568;
             padding: 0.75rem 1.2rem;
             border-radius: 0.75rem;
             color: #e2e8f0;
             font-weight: 600;
-            white-space: nowrap; /* Prevents text from wrapping */
+            white-space: nowrap;
+            /* Prevents text from wrapping */
         }
+
         .flowchart-item .arrow {
             color: #48bb78;
             font-size: 2rem;
@@ -217,446 +228,458 @@
         }
     </style>
 </head>
+
 <body>
 
-<div class="presentation-container">
-    <!-- Slides -->
-    <div class="slide" id="slide1">
-        <div>
-            <h2 class="text-white">Internship Experience:</h2>
-            <h3 class="text-white">Deloitte Cyber Virtual Internship (Forage)</h3>
-            <p class="text-xl mt-4">Anuj Yadav, B.Tech 4th Year Student</p>
-        </div>
-    </div>
-
-    <div class="slide" id="slide2">
-        <h2 class="text-white">Introduction</h2>
-        <ul class="text-lg">
-            <li>Deloitte: A global professional services firm.</li>
-            <li>Forage: Platform for virtual internships.</li>
-            <li>Field: Cyber Security.</li>
-        </ul>
-        <div class="flex flex-col items-center mt-8 space-y-4">
-            <div class="logo-container">
-                <img src="https://placehold.co/150x50/1a202c/e2e8f0?text=Deloitte" alt="Deloitte Logo" class="logo">
-                <img src="https://placehold.co/150x50/1a202c/e2e8f0?text=Forage" alt="Forage Logo" class="logo">
+    <div class="presentation-container">
+        <!-- Slides -->
+        <div class="slide" id="slide1">
+            <div>
+                <h2 class="text-white">Internship Experience:</h2>
+                <h3 class="text-white">Deloitte Cyber Virtual Internship (Forage)</h3>
+                <p class="text-xl mt-4">Anuj Yadav, B.Tech 4th Year Student</p>
             </div>
         </div>
-    </div>
 
-    <div class="slide" id="slide3">
-        <h2 class="text-white">Internship Objective</h2>
-        <ul class="text-lg">
-            <li>Goal: Learn to respond to cyber security breaches.</li>
-            <li>Method: Analyze logs to detect incidents.</li>
-            <li>Role: Simulate a cyber security consultant.</li>
-        </ul>
-        <div class="flowchart-container">
-            <div class="flowchart-item">
-                <div class="box">Cyber Breach</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Log Analysis</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Consultant Response</div>
+        <div class="slide" id="slide2">
+            <h2 class="text-white">Introduction</h2>
+            <ul class="text-lg">
+                <li>Deloitte: A global professional services firm.</li>
+                <li>Forage: Platform for virtual internships.</li>
+                <li>Field: Cyber Security.</li>
+            </ul>
+            <div class="flex flex-col items-center mt-8 space-y-4">
+                <div class="logo-container">
+                    <img src="https://placehold.co/150x50/1a202c/e2e8f0?text=Deloitte" alt="Deloitte Logo" class="logo">
+                    <img src="https://placehold.co/150x50/1a202c/e2e8f0?text=Forage" alt="Forage Logo" class="logo">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="slide" id="slide4">
-        <h2 class="text-white">About Deloitte</h2>
-        <ul class="text-lg">
-            <li>Role: Global leader in cyber consulting.</li>
-            <li>Focus: Helping organizations manage risks and breaches.</li>
-            <li>Services: Provides cutting-edge cyber consulting.</li>
-        </ul>
-    </div>
-
-    <div class="slide" id="slide5">
-        <h2 class="text-white">About Forage Platform</h2>
-        <ul class="text-lg">
-            <li>Service: Free, self-paced virtual internships.</li>
-            <li>Benefit: Simulates company projects for practical experience.</li>
-            <li>Access: Gain experience without leaving campus.</li>
-        </ul>
-    </div>
-
-    <div class="slide" id="slide6">
-        <h2 class="text-white">Project Brief</h2>
-        <ul class="text-lg">
-            <li>Client: Daikibo Industrials.</li>
-            <li>Scenario: Suspected data breach.</li>
-            <li>Task: Investigate web server logs to find the source.</li>
-        </ul>
-        <div class="mt-5 p-6 bg-gray-700 rounded-lg shadow-xl border border-green-500 border-opacity-30 w-full md:w-3/4">
-            <div class="flex justify-between items-center mb-4">
-                <h4 class="text-xl font-semibold text-green-400">Daikibo Industrials</h4>
-                <img src="https://placehold.co/80x40/1a202c/e2e8f0?text=Daikibo" alt="Daikibo Logo" class="rounded">
+        <div class="slide" id="slide3">
+            <h2 class="text-white">Internship Objective</h2>
+            <ul class="text-lg">
+                <li>Goal: Learn to respond to cyber security breaches.</li>
+                <li>Method: Analyze logs to detect incidents.</li>
+                <li>Role: Simulate a cyber security consultant.</li>
+            </ul>
+            <div class="flowchart-container">
+                <div class="flowchart-item">
+                    <div class="box">Cyber Breach</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Log Analysis</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Consultant Response</div>
+                </div>
             </div>
-            <p class="text-lg font-medium text-red-400">Data Breach Scenario</p>
-            <ul class="list-none text-left mt-2 pl-0">
-                <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:animate-pulse">Suspected data breach affecting production.</li>
-                <li class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:animate-pulse">Task: Investigate web server logs.</li>
+        </div>
+
+        <div class="slide" id="slide4">
+            <h2 class="text-white">About Deloitte</h2>
+            <ul class="text-lg">
+                <li>Role: Global leader in cyber consulting.</li>
+                <li>Focus: Helping organizations manage risks and breaches.</li>
+                <li>Services: Provides cutting-edge cyber consulting.</li>
             </ul>
         </div>
-    </div>
 
-    <div class="slide" id="slide7">
-        <h2 class="text-white">Key Learning 1: Breach Response</h2>
-        <ul class="text-lg">
-            <li>Steps: Identification, analysis, communication.</li>
-            <li>Priority: Swift and accurate response to minimize damage.</li>
-        </ul>
-        <div class="flowchart-container">
-            <div class="flowchart-item">
-                <div class="box">Identify</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Analyze</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Respond</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Communicate</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide8">
-        <h2 class="text-white">Key Learning 2: Web Activity Logs</h2>
-        <ul class="text-lg">
-            <li>Function: Logs record user requests and actions.</li>
-            <li>Content: IP address, user ID, timestamps, request types.</li>
-            <li>Purpose: Critical for detecting suspicious access.</li>
-        </ul>
-        <div class="bg-gray-800 p-4 mt-8 rounded-lg text-xs md:text-sm overflow-x-auto w-full md:w-4/5">
-            <pre><span class="text-gray-400">[2024-08-25T10:30:01Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> GET /api/v1/status HTTP/1.1</pre>
-            <pre><span class="text-gray-400">[2024-08-25T10:30:02Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> GET /dashboard/page.html HTTP/1.1</pre>
-            <pre><span class="text-red-400">[2024-08-25T11:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> <span class="font-bold">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
-            <pre><span class="text-red-400">[2024-08-25T12:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> <span class="font-bold">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
-            <p class="text-sm mt-4 text-center text-gray-400">Annotated Sample Log File</p>
-        </div>
-    </div>
-
-    <div class="slide" id="slide9">
-        <h2 class="text-white">Log Analysis Basics</h2>
-        <ul class="text-lg">
-            <li>Process: Scan chronological entries.</li>
-            <li>Formats: Apache, IIS logs.</li>
-            <li>Focus: Look for unusual or repetitive access sequences.</li>
-        </ul>
-        <div class="icon-container mt-8">
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16H9v-2h2v2zm0-4H9V8h2v6zm4 0h-2V8h2v6z"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">IP Address</span>
-            </div>
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"/>
-                    <polyline points="12 6 12 12 16 14"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">Timestamp</span>
-            </div>
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">User ID</span>
-            </div>
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 12h16M4 18h16M4 6h16"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">Action</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide10">
-        <h2 class="text-white">Suspicious Activity Indicators</h2>
-        <ul class="text-lg">
-            <li><span class="text-red-400">❌</span> Unexpected logins outside business hours.</li>
-            <li><span class="text-red-400">🔄</span> Unusually frequent or repetitive data downloads.</li>
-            <li><span class="text-red-400">🗺️</span> Access from unusual locations or IP addresses.</li>
-            <li><span class="text-red-400">🤖</span> Signs of scripted or automated access to data.</li>
-        </ul>
-    </div>
-
-    <div class="slide" id="slide11">
-        <h2 class="text-white">Tools & Techniques</h2>
-        <ul class="text-lg">
-            <li>Used text/code editors like VS Code to open and inspect logs.</li>
-            <li>Leveraged spreadsheet filtering for pattern spotting.</li>
-            <li>Basic scripting for sorting or repeated pattern detection.</li>
-        </ul>
-        <div class="tool-visuals">
-            <div class="tool-box">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 18l-6-6 6-6"/>
-                </svg>
-                <h4>VS Code</h4>
-            </div>
-            <div class="tool-box">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2l10 10-10 10L2 12z"/>
-                </svg>
-                <h4>Spreadsheet</h4>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide12">
-        <h2 class="text-white">Project Step 1: Gathering Evidence</h2>
-        <ul class="text-lg">
-            <li>Action: Examined web_requests.log.</li>
-            <li>Observation: Noted IP addresses and user sessions.</li>
-            <li>Documentation: Recorded sequences of requests and timestamps.</li>
-        </ul>
-        <div class="flowchart-container">
-            <div class="flowchart-item">
-                <div class="box">Access Logs</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Extract Sessions</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Prepare Data</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide13">
-        <h2 class="text-white">Project Step 2: Reviewing Logs</h2>
-        <ul class="text-lg">
-            <li>Action: Looked for long sequences and exact interval API calls.</li>
-            <li>Comparison: Analyzed sessions by the same user on different dates.</li>
-            <li>Highlight: Marked suspicious behavior.</li>
-        </ul>
-        <div class="bg-gray-800 p-4 mt-8 rounded-lg text-xs md:text-sm overflow-x-auto w-full md:w-4/5">
-            <pre><span class="text-gray-400">[2024-08-25T11:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> "user_123" <span class="font-bold text-red-400">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
-            <pre><span class="text-gray-400">[2024-08-25T12:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> "user_123" <span class="font-bold text-red-400">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
-            <pre><span class="text-gray-400">[2024-08-25T13:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> "user_123" <span class="font-bold text-red-400">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
-            <p class="text-sm mt-4 text-center text-gray-400">Log entries with suspicious, repeated API requests highlighted.</p>
-        </div>
-    </div>
-
-    <div class="slide" id="slide14">
-        <h2 class="text-white">Example: Log Entry Breakdown</h2>
-        <ul class="text-lg">
-            <li>Entry Breakdown: IP, timestamp, user ID, request type.</li>
-            <li>Analysis: Identified login requests followed by API calls.</li>
-            <li>Detection: Consistent, automated patterns.</li>
-        </ul>
-        <div class="bg-gray-800 p-4 mt-8 rounded-lg text-xs md:text-sm overflow-x-auto w-full md:w-4/5">
-            <pre><span class="text-yellow-400">192.168.0.101</span> <span class="text-gray-400">user_123</span> <span class="text-gray-400">[2024-08-25T11:00:00Z]</span> <span class="text-green-400">GET</span> <span class="text-blue-400">/api/v1/data/all?export=true</span></pre>
-            <div class="mt-4 text-left">
-                <p><span class="text-yellow-400 font-semibold">IP Address:</span> 192.168.0.101 (Internal network)</p>
-                <p><span class="text-gray-400 font-semibold">User ID:</span> user_123 (Authenticated user)</p>
-                <p><span class="text-green-400 font-semibold">Request Type:</span> GET (Data download)</p>
-                <p><span class="text-blue-400 font-semibold">Path:</span> /api/v1/data/all?export=true (Suspicious export path)</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide15">
-        <h2 class="text-white">Identifying the Breach Source</h2>
-        <ul class="text-lg">
-            <li>Correlated repeated requests.</li>
-            <li>Found user IDs with scripted API call patterns.</li>
-            <li>Identified source as an internal user, not external.</li>
-        </ul>
-        <div class="flowchart-container">
-            <div class="flowchart-item">
-                <div class="box">IP: 192.168.0.101</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">User ID: user_123</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box">Repeated Requests</div>
-            </div>
-            <div class="arrow">→</div>
-            <div class="flowchart-item">
-                <div class="box bg-red-500 text-white">Insider/VPN Breach</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide" id="slide16">
-        <h2 class="text-white">Answering Client Questions</h2>
-        <ul class="text-lg">
-            <li>Questions: Was the breach internal or external? Who was responsible?</li>
-            <li>Answers: Internal network source. Identified a suspicious user.</li>
-        </ul>
-        <div class="w-full md:w-4/5 mt-8 border border-gray-600 rounded-lg overflow-hidden">
-            <table class="w-full text-left table-auto">
-                <thead>
-                    <tr class="bg-gray-700">
-                        <th class="p-4 font-semibold text-gray-300">Question</th>
-                        <th class="p-4 font-semibold text-gray-300">Answer from Logs</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="bg-gray-800">
-                        <td class="p-4">External Attacker?</td>
-                        <td class="p-4 text-red-400 font-bold">No.</td>
-                    </tr>
-                    <tr class="bg-gray-700">
-                        <td class="p-4">Breach Source?</td>
-                        <td class="p-4 text-green-400 font-bold">Internal Network (VPN or Insider)</td>
-                    </tr>
-                    <tr class="bg-gray-800">
-                        <td class="p-4">Responsible Party?</td>
-                        <td class="p-4 text-green-400 font-bold">User with ID 'user_123'</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="slide" id="slide17">
-        <h2 class="text-white">Reporting & Communication</h2>
-        <ul class="text-lg">
-            <li>Summary: Clear findings without jargon.</li>
-            <li>Evidence: Highlighted key suspicious activities.</li>
-            <li>Recommendations: Presented actionable next steps.</li>
-        </ul>
-        <div class="bg-gray-800 p-6 mt-8 rounded-lg shadow-xl border border-gray-600 w-full md:w-4/5 text-left">
-            <h4 class="text-lg font-bold text-green-400">Incident Report Summary</h4>
-            <div class="h-1 bg-gray-600 w-full rounded my-2"></div>
-            <ul class="list-disc pl-5 text-gray-300">
-                <li class="mt-2">**Key Finding:** A series of automated requests from an internal user ID.</li>
-                <li class="mt-2">**Evidence:** Log timestamps show API calls at precise, hourly intervals.</li>
-                <li class="mt-2">**Recommendation:** Revoke access for the identified user and investigate VPN security.</li>
+        <div class="slide" id="slide5">
+            <h2 class="text-white">About Forage Platform</h2>
+            <ul class="text-lg">
+                <li>Service: Free, self-paced virtual internships.</li>
+                <li>Benefit: Simulates company projects for practical experience.</li>
+                <li>Access: Gain experience without leaving campus.</li>
             </ul>
         </div>
-    </div>
 
-    <div class="slide" id="slide18">
-        <h2 class="text-white">Skills Developed</h2>
-        <ul class="text-lg">
-            <li><span class="text-yellow-400">🕵️</span> Log file analysis and cyber incident investigation.</li>
-            <li><span class="text-yellow-400">🧠</span> Critical thinking and attention to detail.</li>
-            <li><span class="text-yellow-400">✍️</span> Report writing and client communication.</li>
-            <li><span class="text-yellow-400">🚨</span> Increased awareness of cyber security operations.</li>
-        </ul>
-        <div class="icon-container mt-8">
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 20V10M18 16V4M6 16V14"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">Analysis</span>
+        <div class="slide" id="slide6">
+            <h2 class="text-white">Project Brief</h2>
+            <ul class="text-lg">
+                <li>Client: Daikibo Industrials.</li>
+                <li>Scenario: Suspected data breach.</li>
+                <li>Task: Investigate web server logs to find the source.</li>
+            </ul>
+            <div
+                class="mt-5 p-6 bg-gray-700 rounded-lg shadow-xl border border-green-500 border-opacity-30 w-full md:w-3/4">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="text-xl font-semibold text-green-400">Daikibo Industrials</h4>
+                    <img src="https://placehold.co/80x40/1a202c/e2e8f0?text=Daikibo" alt="Daikibo Logo" class="rounded">
+                </div>
+                <p class="text-lg font-medium text-red-400">Data Breach Scenario</p>
+                <ul class="list-none text-left mt-2 pl-0">
+                    <li
+                        class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:animate-pulse">
+                        Suspected data breach affecting production.</li>
+                    <li
+                        class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-3 before:h-3 before:bg-red-500 before:rounded-full before:animate-pulse">
+                        Task: Investigate web server logs.</li>
+                </ul>
             </div>
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                    <line x1="9" y1="9" x2="9.01" y2="9"/>
-                    <line x1="15" y1="9" x2="15.01" y2="9"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">Critical Thinking</span>
+        </div>
+
+        <div class="slide" id="slide7">
+            <h2 class="text-white">Key Learning 1: Breach Response</h2>
+            <ul class="text-lg">
+                <li>Steps: Identification, analysis, communication.</li>
+                <li>Priority: Swift and accurate response to minimize damage.</li>
+            </ul>
+            <div class="flowchart-container">
+                <div class="flowchart-item">
+                    <div class="box">Identify</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Analyze</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Respond</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Communicate</div>
+                </div>
             </div>
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2zM8 6v12M16 6v12M10 6h4M10 18h4"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">Reporting</span>
+        </div>
+
+        <div class="slide" id="slide8">
+            <h2 class="text-white">Key Learning 2: Web Activity Logs</h2>
+            <ul class="text-lg">
+                <li>Function: Logs record user requests and actions.</li>
+                <li>Content: IP address, user ID, timestamps, request types.</li>
+                <li>Purpose: Critical for detecting suspicious access.</li>
+            </ul>
+            <div class="bg-gray-800 p-4 mt-8 rounded-lg text-xs md:text-sm overflow-x-auto w-full md:w-4/5">
+                <pre><span class="text-gray-400">[2024-08-25T10:30:01Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> GET /api/v1/status HTTP/1.1</pre>
+                <pre><span class="text-gray-400">[2024-08-25T10:30:02Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> GET /dashboard/page.html HTTP/1.1</pre>
+                <pre><span class="text-red-400">[2024-08-25T11:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> <span class="font-bold">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
+                <pre><span class="text-red-400">[2024-08-25T12:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> <span class="text-green-400">"user_123"</span> <span class="font-bold">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
+                <p class="text-sm mt-4 text-center text-gray-400">Annotated Sample Log File</p>
             </div>
-            <div class="icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M17 1l4 4-4 4M19 19l-4-4 4-4M12 6.5l-8 8.5"/>
-                    <path d="M16 11l-8 8.5"/>
-                    <path d="M20 15l-8 8.5"/>
-                </svg>
-                <span class="mt-2 text-sm text-gray-400">Communication</span>
+        </div>
+
+        <div class="slide" id="slide9">
+            <h2 class="text-white">Log Analysis Basics</h2>
+            <ul class="text-lg">
+                <li>Process: Scan chronological entries.</li>
+                <li>Formats: Apache, IIS logs.</li>
+                <li>Focus: Look for unusual or repetitive access sequences.</li>
+            </ul>
+            <div class="icon-container mt-8">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16H9v-2h2v2zm0-4H9V8h2v6zm4 0h-2V8h2v6z" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">IP Address</span>
+                </div>
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">Timestamp</span>
+                </div>
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">User ID</span>
+                </div>
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 12h16M4 18h16M4 6h16" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">Action</span>
+                </div>
             </div>
+        </div>
+
+        <div class="slide" id="slide10">
+            <h2 class="text-white">Suspicious Activity Indicators</h2>
+            <ul class="text-lg">
+                <li><span class="text-red-400">❌</span> Unexpected logins outside business hours.</li>
+                <li><span class="text-red-400">🔄</span> Unusually frequent or repetitive data downloads.</li>
+                <li><span class="text-red-400">🗺️</span> Access from unusual locations or IP addresses.</li>
+                <li><span class="text-red-400">🤖</span> Signs of scripted or automated access to data.</li>
+            </ul>
+        </div>
+
+        <div class="slide" id="slide11">
+            <h2 class="text-white">Tools & Techniques</h2>
+            <ul class="text-lg">
+                <li>Used text/code editors like VS Code to open and inspect logs.</li>
+                <li>Leveraged spreadsheet filtering for pattern spotting.</li>
+                <li>Basic scripting for sorting or repeated pattern detection.</li>
+            </ul>
+            <div class="tool-visuals">
+                <div class="tool-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 18l-6-6 6-6" />
+                    </svg>
+                    <h4>VS Code</h4>
+                </div>
+                <div class="tool-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l10 10-10 10L2 12z" />
+                    </svg>
+                    <h4>Spreadsheet</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide12">
+            <h2 class="text-white">Project Step 1: Gathering Evidence</h2>
+            <ul class="text-lg">
+                <li>Action: Examined web_requests.log.</li>
+                <li>Observation: Noted IP addresses and user sessions.</li>
+                <li>Documentation: Recorded sequences of requests and timestamps.</li>
+            </ul>
+            <div class="flowchart-container">
+                <div class="flowchart-item">
+                    <div class="box">Access Logs</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Extract Sessions</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Prepare Data</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide13">
+            <h2 class="text-white">Project Step 2: Reviewing Logs</h2>
+            <ul class="text-lg">
+                <li>Action: Looked for long sequences and exact interval API calls.</li>
+                <li>Comparison: Analyzed sessions by the same user on different dates.</li>
+                <li>Highlight: Marked suspicious behavior.</li>
+            </ul>
+            <div class="bg-gray-800 p-4 mt-8 rounded-lg text-xs md:text-sm overflow-x-auto w-full md:w-4/5">
+                <pre><span class="text-gray-400">[2024-08-25T11:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> "user_123" <span class="font-bold text-red-400">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
+                <pre><span class="text-gray-400">[2024-08-25T12:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> "user_123" <span class="font-bold text-red-400">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
+                <pre><span class="text-gray-400">[2024-08-25T13:00:00Z]</span> <span class="text-yellow-400">192.168.0.101</span> "user_123" <span class="font-bold text-red-400">GET /api/v1/data/all?export=true</span> HTTP/1.1</pre>
+                <p class="text-sm mt-4 text-center text-gray-400">Log entries with suspicious, repeated API requests
+                    highlighted.</p>
+            </div>
+        </div>
+
+        <div class="slide" id="slide14">
+            <h2 class="text-white">Example: Log Entry Breakdown</h2>
+            <ul class="text-lg">
+                <li>Entry Breakdown: IP, timestamp, user ID, request type.</li>
+                <li>Analysis: Identified login requests followed by API calls.</li>
+                <li>Detection: Consistent, automated patterns.</li>
+            </ul>
+            <div class="bg-gray-800 p-4 mt-8 rounded-lg text-xs md:text-sm overflow-x-auto w-full md:w-4/5">
+                <pre><span class="text-yellow-400">192.168.0.101</span> <span class="text-gray-400">user_123</span> <span class="text-gray-400">[2024-08-25T11:00:00Z]</span> <span class="text-green-400">GET</span> <span class="text-blue-400">/api/v1/data/all?export=true</span></pre>
+                <div class="mt-4 text-left">
+                    <p><span class="text-yellow-400 font-semibold">IP Address:</span> 192.168.0.101 (Internal network)
+                    </p>
+                    <p><span class="text-gray-400 font-semibold">User ID:</span> user_123 (Authenticated user)</p>
+                    <p><span class="text-green-400 font-semibold">Request Type:</span> GET (Data download)</p>
+                    <p><span class="text-blue-400 font-semibold">Path:</span> /api/v1/data/all?export=true (Suspicious
+                        export path)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide15">
+            <h2 class="text-white">Identifying the Breach Source</h2>
+            <ul class="text-lg">
+                <li>Correlated repeated requests.</li>
+                <li>Found user IDs with scripted API call patterns.</li>
+                <li>Identified source as an internal user, not external.</li>
+            </ul>
+            <div class="flowchart-container">
+                <div class="flowchart-item">
+                    <div class="box">IP: 192.168.0.101</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">User ID: user_123</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box">Repeated Requests</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flowchart-item">
+                    <div class="box bg-red-500 text-white">Insider/VPN Breach</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide16">
+            <h2 class="text-white">Answering Client Questions</h2>
+            <ul class="text-lg">
+                <li>Questions: Was the breach internal or external? Who was responsible?</li>
+                <li>Answers: Internal network source. Identified a suspicious user.</li>
+            </ul>
+            <div class="w-full md:w-4/5 mt-8 border border-gray-600 rounded-lg overflow-hidden">
+                <table class="w-full text-left table-auto">
+                    <thead>
+                        <tr class="bg-gray-700">
+                            <th class="p-4 font-semibold text-gray-300">Question</th>
+                            <th class="p-4 font-semibold text-gray-300">Answer from Logs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-gray-800">
+                            <td class="p-4">External Attacker?</td>
+                            <td class="p-4 text-red-400 font-bold">No.</td>
+                        </tr>
+                        <tr class="bg-gray-700">
+                            <td class="p-4">Breach Source?</td>
+                            <td class="p-4 text-green-400 font-bold">Internal Network (VPN or Insider)</td>
+                        </tr>
+                        <tr class="bg-gray-800">
+                            <td class="p-4">Responsible Party?</td>
+                            <td class="p-4 text-green-400 font-bold">User with ID 'user_123'</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="slide" id="slide17">
+            <h2 class="text-white">Reporting & Communication</h2>
+            <ul class="text-lg">
+                <li>Summary: Clear findings without jargon.</li>
+                <li>Evidence: Highlighted key suspicious activities.</li>
+                <li>Recommendations: Presented actionable next steps.</li>
+            </ul>
+            <div class="bg-gray-800 p-6 mt-8 rounded-lg shadow-xl border border-gray-600 w-full md:w-4/5 text-left">
+                <h4 class="text-lg font-bold text-green-400">Incident Report Summary</h4>
+                <div class="h-1 bg-gray-600 w-full rounded my-2"></div>
+                <ul class="list-disc pl-5 text-gray-300">
+                    <li class="mt-2">**Key Finding:** A series of automated requests from an internal user ID.</li>
+                    <li class="mt-2">**Evidence:** Log timestamps show API calls at precise, hourly intervals.</li>
+                    <li class="mt-2">**Recommendation:** Revoke access for the identified user and investigate VPN
+                        security.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slide" id="slide18">
+            <h2 class="text-white">Skills Developed</h2>
+            <ul class="text-lg">
+                <li><span class="text-yellow-400">🕵️</span> Log file analysis and cyber incident investigation.</li>
+                <li><span class="text-yellow-400">🧠</span> Critical thinking and attention to detail.</li>
+                <li><span class="text-yellow-400">✍️</span> Report writing and client communication.</li>
+                <li><span class="text-yellow-400">🚨</span> Increased awareness of cyber security operations.</li>
+            </ul>
+            <div class="icon-container mt-8">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 20V10M18 16V4M6 16V14" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">Analysis</span>
+                </div>
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                        <line x1="9" y1="9" x2="9.01" y2="9" />
+                        <line x1="15" y1="9" x2="15.01" y2="9" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">Critical Thinking</span>
+                </div>
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2zM8 6v12M16 6v12M10 6h4M10 18h4" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">Reporting</span>
+                </div>
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 1l4 4-4 4M19 19l-4-4 4-4M12 6.5l-8 8.5" />
+                        <path d="M16 11l-8 8.5" />
+                        <path d="M20 15l-8 8.5" />
+                    </svg>
+                    <span class="mt-2 text-sm text-gray-400">Communication</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide19">
+            <img src="anuj.jpg" alt="" srcset="" style=" max-width:500px;">
+        </div>
+
+        <div class="slide" id="slide20">
+            <h2 class="text-white">Thank You / Q&A</h2>
+            <ul class="text-lg">
+                <li>Thank you for your attention!</li>
+                <li>Open for questions and discussion.</li>
+            </ul>
+            <div class="mt-8 flex flex-col items-center">
+                <h3 class="text-5xl font-extrabold text-green-400 mb-4">THANK YOU</h3>
+                <p class="text-xl text-gray-400">Questions?</p>
+                <p class="text-sm mt-4 text-gray-500">
+                    <span class="font-bold">Contact:</span> Anuj Yadav | anuj.yadav@email.com
+                </p>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-button">Previous</button>
+            <button id="nextBtn" class="nav-button">Next</button>
         </div>
     </div>
 
-    <div class="slide" id="slide19">
-        <h2 class="text-white">Reflection & Takeaways</h2>
-        <ul class="text-lg">
-            <li>Experience: Gained practical, real-world experience.</li>
-            <li>Confidence: Developed confidence in handling breach investigations.</li>
-            <li>Future: Inspired to pursue further learning in cybersecurity.</li>
-        </ul>
-        <div class="relative w-40 h-40 mt-8">
-            <div class="absolute bottom-0 left-0 w-32 h-32 bg-green-500 bg-opacity-30 rounded-full blur-xl"></div>
-            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 bg-opacity-30 rounded-full blur-xl"></div>
-            <svg class="absolute inset-0 w-full h-full text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 20V10M18 16V4M6 16V14"/>
-            </svg>
-        </div>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentSlide = 0;
 
-    <div class="slide" id="slide20">
-        <h2 class="text-white">Thank You / Q&A</h2>
-        <ul class="text-lg">
-            <li>Thank you for your attention!</li>
-            <li>Open for questions and discussion.</li>
-        </ul>
-        <div class="mt-8 flex flex-col items-center">
-            <h3 class="text-5xl font-extrabold text-green-400 mb-4">THANK YOU</h3>
-            <p class="text-xl text-gray-400">Questions?</p>
-            <p class="text-sm mt-4 text-gray-500">
-                <span class="font-bold">Contact:</span> Anuj Yadav | anuj.yadav@email.com
-            </p>
-        </div>
-    </div>
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                });
+                slides[index].classList.add('active');
+                prevBtn.disabled = (index === 0);
+                nextBtn.disabled = (index === slides.length - 1);
+            }
 
-    <!-- Navigation Buttons -->
-    <div class="navigation-buttons">
-        <button id="prevBtn" class="nav-button">Previous</button>
-        <button id="nextBtn" class="nav-button">Next</button>
-    </div>
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const slides = document.querySelectorAll('.slide');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active');
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
             });
-            slides[index].classList.add('active');
-            prevBtn.disabled = (index === 0);
-            nextBtn.disabled = (index === slides.length - 1);
-        }
 
-        prevBtn.addEventListener('click', () => {
-            if (currentSlide > 0) {
-                currentSlide--;
-                showSlide(currentSlide);
-            }
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize the first slide
+            showSlide(currentSlide);
         });
-
-        nextBtn.addEventListener('click', () => {
-            if (currentSlide < slides.length - 1) {
-                currentSlide++;
-                showSlide(currentSlide);
-            }
-        });
-
-        // Initialize the first slide
-        showSlide(currentSlide);
-    });
-</script>
+    </script>
 </body>
+
 </html>
